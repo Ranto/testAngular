@@ -1,5 +1,5 @@
 use strict;
-function(){
+(function(){
     var app = angular.module("loadingApp", ['ui-router']);
 
-}();
+})();
