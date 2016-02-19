@@ -8,7 +8,7 @@
     function resourceService($http, $q) {
         this.getPDF = function () {
             var deferred = $q.defer();
-            $http.get('/resources/fiche.pdf')
+            $http.get('./resources/fiche.pdf')
                 .success( function(data, status) {
                     deferred.resolve(data);
                 }).error( function(data, status) {
