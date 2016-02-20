@@ -5,17 +5,13 @@
 
     app.service('resourceService', resourceService);
 
-    function resourceService($http, $q) {
+    function resourceService($http, $timeout) {
+        // Retourne un httpPromise
         this.getPDF = function () {
-            var deferred = $q.defer();
-            $http.get('./resources/fiche.pdf')
-                .success( function(data, status) {
-                    deferred.resolve(data);
-                }).error( function(data, status) {
-                    deferred.reject('Impossible d\'avoir les données');
-                });
-
-            return deferred.promise;
+            return $http.get(
+                        './resources/fiche.pdf',
+                        {responseType: 'arraybuffer'}
+            );
         };
     }
 })();
