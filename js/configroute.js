@@ -1,5 +1,5 @@
-use strict;
 (function () {
+    'use strict';
     var app = angular.module('loadingApp');
 
     app.config(function ($stateProvider, $urlRouterProvider) {
