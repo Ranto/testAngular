@@ -1,0 +1,23 @@
+{
+  "name": "loading",
+  "homepage": "https://github.com/Ranto/testAngular",
+  "authors": [
+    "Ranto Ambinintsoa ANDRIANJAFY <andrianjafy@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.0"
+  }
+}
