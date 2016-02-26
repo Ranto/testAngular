@@ -1,6 +1,6 @@
 (function () {
     'use strict';
-    var app = angular.module('loadingApp');
+    var app = angular.module('essaiApp');
 
     app.config(function ($stateProvider, $urlRouterProvider) {
         $urlRouterProvider.otherwise("/dater");

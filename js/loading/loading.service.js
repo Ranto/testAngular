@@ -1,7 +1,7 @@
 (function(){
     'use strict';
 
-    var app = angular.module("loadingApp");
+    var app = angular.module("essaiApp");
 
     app.service('resourceService', resourceService);
 

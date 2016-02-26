@@ -1,5 +1,5 @@
 (function(){
     'use strict';
-    var app = angular.module("loadingApp", ['ui.router', 'daterangepicker']);
+    var app = angular.module("essaiApp", ['ui.router', 'daterangepicker']);
 
 })();

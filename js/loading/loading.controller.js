@@ -1,6 +1,6 @@
 (function(){
     'use strict';
-    var app = angular.module("loadingApp");
+    var app = angular.module("essaiApp");
 
     app.controller("loadingController", loadingController);
     function loadingController($scope, resourceService, $sce) {
