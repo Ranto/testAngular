@@ -3,13 +3,20 @@
     var app = angular.module('loadingApp');
 
     app.config(function ($stateProvider, $urlRouterProvider) {
-        $urlRouterProvider.otherwise("/");
-
+        $urlRouterProvider.otherwise("/dater");
         $stateProvider
-            .state('loading', {
+            .state('home', {
                 url: "/",
+                templateUrl: "partials/home.html"
+            })
+            .state('loading', {
+                url: "/loading",
                 templateUrl: "partials/loading/loading.html",
                 controller: "loadingController as ctrl"
+            }).state('daterange', {
+                url: "/dater",
+                templateUrl: "partials/dater/dater.html",
+                controller: "daterController as ctrl"
             });
     });
 })();
