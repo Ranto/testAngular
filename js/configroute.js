@@ -17,6 +17,10 @@
                 url: "/dater",
                 templateUrl: "partials/dater/dater.html",
                 controller: "daterController as ctrl"
+            }).state('digestwatch', {
+                url: "/digwat",
+                templateUrl: "partials/digwat/digwat.html",
+                controller: "digwatController as ctrl"
             });
     });
 })();
